@@ -1,0 +1,1322 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/"
+     xml:base="http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:dc="http://purl.org/dc/elements/1.1/">
+    <owl:Ontology rdf:about="http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/">
+        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance</rdfs:isDefinedBy>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2017-03-23</terms:modified>
+        <dc:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2017-03-23</dc:issued>
+        <dc:creater rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Daniel Mejia</dc:creater>
+        <dc:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Freight Performance Ontology</dc:title>
+        <dc:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Eric Camacho
+Jose Caballero
+Eduardo Torres
+Natalia Villanueva-Rosales</dc:contributor>
+        <dc:creater rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://cybershare.utep.edu</dc:creater>
+        <dc:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Freight Performance Ontology to connect Heterogenous Freight Data</dc:description>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/contributor -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/contributor"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/creater -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/creater"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/description -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/description"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/issued -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/issued"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/title -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/title"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/modified -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/modified"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#Calculates -->
+
+    <owl:ObjectProperty rdf:about="http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#Calculates">
+        <rdfs:domain rdf:resource="http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#Density"/>
+        <rdfs:range rdf:resource="http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#TravelTimeReliability"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#TimeCausedBy -->
+
+    <owl:ObjectProperty rdf:about="http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#TimeCausedBy">
+        <rdfs:domain rdf:resource="http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#EvacuationClearenceTime"/>
+        <rdfs:domain rdf:resource="http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#ResponseTimeToIncidents"/>
+        <rdfs:range rdf:resource="http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#Incident"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#affects -->
+
+    <owl:ObjectProperty rdf:about="http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#affects"/>
+    
+
+
+    <!-- http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#cause -->
+
+    <owl:ObjectProperty rdf:about="http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#cause">
+        <rdfs:domain rdf:resource="http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#Incident"/>
+        <rdfs:range rdf:resource="http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#DelayCausedByIncidents"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#costOf -->
+
+    <owl:ObjectProperty rdf:about="http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#costOf">
+        <rdfs:domain rdf:resource="http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#ValueOfTime"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#coversArea -->
+
+    <owl:ObjectProperty rdf:about="http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#coversArea">
+        <rdfs:domain rdf:resource="http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#ComercialVehicleSafetyViolations"/>
+        <rdfs:domain rdf:resource="http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#DelayCausedByIncidents"/>
+        <rdfs:domain rdf:resource="http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#Density"/>
+        <rdfs:domain rdf:resource="http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#EvacuationClearenceTime"/>
+        <rdfs:domain rdf:resource="http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#Incident"/>
+        <rdfs:domain rdf:resource="http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#PortOfEntry"/>
+        <rdfs:domain rdf:resource="http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#RecurringDelay"/>
+        <rdfs:domain rdf:resource="http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#ResponseTimeToIncidents"/>
+        <rdfs:domain rdf:resource="http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#TravelTimeReliability"/>
+        <rdfs:domain rdf:resource="http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#ValueOfTime"/>
+        <rdfs:domain rdf:resource="http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#VehicleMilesTraveled"/>
+        <rdfs:domain rdf:resource="http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#WeatherRelatedIncident"/>
+        <rdfs:range rdf:resource="http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#GeographicalArea"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#hasAverageEntryTime -->
+
+    <owl:ObjectProperty rdf:about="http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#hasAverageEntryTime">
+        <rdfs:subPropertyOf rdf:resource="http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#hasUnit"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#hasFrequency -->
+
+    <owl:ObjectProperty rdf:about="http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#hasFrequency"/>
+    
+
+
+    <!-- http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#hasUnit -->
+
+    <owl:ObjectProperty rdf:about="http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#hasUnit"/>
+    
+
+
+    <!-- http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#isIndicatorOf -->
+
+    <owl:ObjectProperty rdf:about="http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#isIndicatorOf">
+        <rdfs:domain rdf:resource="http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#ComercialVehicleSafetyViolations"/>
+        <rdfs:domain rdf:resource="http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#DailyWeatherMeasurement"/>
+        <rdfs:domain rdf:resource="http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#DelayCausedByIncidents"/>
+        <rdfs:domain rdf:resource="http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#Density"/>
+        <rdfs:domain rdf:resource="http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#EvacuationClearenceTime"/>
+        <rdfs:domain rdf:resource="http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#FatalIncident"/>
+        <rdfs:domain rdf:resource="http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#FuelPrice"/>
+        <rdfs:domain rdf:resource="http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#Incident"/>
+        <rdfs:domain rdf:resource="http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#PortOfEntry"/>
+        <rdfs:domain rdf:resource="http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#RecurringDelay"/>
+        <rdfs:domain rdf:resource="http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#ResponseTimeToIncidents"/>
+        <rdfs:domain rdf:resource="http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#SecurityForHighwayAndTransit"/>
+        <rdfs:domain rdf:resource="http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#TravelTimeReliability"/>
+        <rdfs:domain rdf:resource="http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#ValueOfTime"/>
+        <rdfs:domain rdf:resource="http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#VehicleMilesTraveled"/>
+        <rdfs:domain rdf:resource="http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#WeatherRelatedIncident"/>
+        <rdfs:range rdf:resource="http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#EnvironmentalSustainability"/>
+        <rdfs:range rdf:resource="http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#Mobility"/>
+        <rdfs:range rdf:resource="http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#Safety"/>
+        <rdfs:range rdf:resource="http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#TrafficMeasurements"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#isPartOf -->
+
+    <owl:ObjectProperty rdf:about="http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#isPartOf">
+        <rdfs:domain rdf:resource="http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#EnvironmentalSustainability"/>
+        <rdfs:domain rdf:resource="http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#Mobility"/>
+        <rdfs:domain rdf:resource="http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#PortOfEntry"/>
+        <rdfs:domain rdf:resource="http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#Safety"/>
+        <rdfs:domain rdf:resource="http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#TrafficMeasurements"/>
+        <rdfs:range rdf:resource="http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#PerformanceMetrics"/>
+        <rdfs:range rdf:resource="http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#RecurringDelay"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#multiplyByLength -->
+
+    <owl:ObjectProperty rdf:about="http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#multiplyByLength">
+        <rdfs:range rdf:resource="http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#VehicleMilesTraveled"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#observes -->
+
+    <owl:ObjectProperty rdf:about="http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#observes">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#uses -->
+
+    <owl:ObjectProperty rdf:about="http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#uses"/>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#topObjectProperty -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/2002/07/owl#topObjectProperty">
+        <owl:inverseOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ReflexiveProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/hasWeather.Dust -->
+
+    <owl:DatatypeProperty rdf:about="http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/hasWeather.Dust"/>
+    
+
+
+    <!-- http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#hasAveragePeakHourDelay.AveragePeakYear -->
+
+    <owl:DatatypeProperty rdf:about="http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#hasAveragePeakHourDelay.AveragePeakYear">
+        <rdfs:domain rdf:resource="http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#TrafficMeasurements"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#hasAveragePeakHourDelay.id -->
+
+    <owl:DatatypeProperty rdf:about="http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#hasAveragePeakHourDelay.id">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#hasAverageResponseTime.AverageValue -->
+
+    <owl:DatatypeProperty rdf:about="http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#hasAverageResponseTime.AverageValue">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#hasAverageResponseTime.Unit -->
+
+    <owl:DatatypeProperty rdf:about="http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#hasAverageResponseTime.Unit">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#hasAverageResponseTime.Year -->
+
+    <owl:DatatypeProperty rdf:about="http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#hasAverageResponseTime.Year">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#hasAverageResponseTime.id -->
+
+    <owl:DatatypeProperty rdf:about="http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#hasAverageResponseTime.id">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#hasCO2Emission.Equivalent -->
+
+    <owl:DatatypeProperty rdf:about="http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#hasCO2Emission.Equivalent">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#hasCO2Emission.GasolineGallons -->
+
+    <owl:DatatypeProperty rdf:about="http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#hasCO2Emission.GasolineGallons">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#hasCO2Emission.id -->
+
+    <owl:DatatypeProperty rdf:about="http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#hasCO2Emission.id">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#hasCommuterStressIndex.Value -->
+
+    <owl:DatatypeProperty rdf:about="http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#hasCommuterStressIndex.Value">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#hasCommuterStressIndex.id -->
+
+    <owl:DatatypeProperty rdf:about="http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#hasCommuterStressIndex.id">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#hasCongestionCost -->
+
+    <owl:DatatypeProperty rdf:about="http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#hasCongestionCost">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#hasCongestionCost.id -->
+
+    <owl:DatatypeProperty rdf:about="http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#hasCongestionCost.id">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#hasCongestionTime.RushHours -->
+
+    <owl:DatatypeProperty rdf:about="http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#hasCongestionTime.RushHours">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#hasCongestionTime.id -->
+
+    <owl:DatatypeProperty rdf:about="http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#hasCongestionTime.id">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#hasDailyPrecipitationId.id -->
+
+    <owl:DatatypeProperty rdf:about="http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#hasDailyPrecipitationId.id">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#hasDailyTemperatureId.id -->
+
+    <owl:DatatypeProperty rdf:about="http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#hasDailyTemperatureId.id">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#hasDailyWeather.Date -->
+
+    <owl:DatatypeProperty rdf:about="http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#hasDailyWeather.Date">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#hasDailyWeather.Precipitation -->
+
+    <owl:DatatypeProperty rdf:about="http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#hasDailyWeather.Precipitation">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#hasDailyWeather.Temperature -->
+
+    <owl:DatatypeProperty rdf:about="http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#hasDailyWeather.Temperature">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#hasDailyWeatherMetricsId.id -->
+
+    <owl:DatatypeProperty rdf:about="http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#hasDailyWeatherMetricsId.id">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#hasDieselPrice.Value -->
+
+    <owl:DatatypeProperty rdf:about="http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#hasDieselPrice.Value">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#hasDieselPrice.id -->
+
+    <owl:DatatypeProperty rdf:about="http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#hasDieselPrice.id">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#hasFatalIncident.id -->
+
+    <owl:DatatypeProperty rdf:about="http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#hasFatalIncident.id">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#hasGasEmission.id -->
+
+    <owl:DatatypeProperty rdf:about="http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#hasGasEmission.id">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#hasGasEmmission.Value -->
+
+    <owl:DatatypeProperty rdf:about="http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#hasGasEmmission.Value">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#hasGasolinePrice.Value -->
+
+    <owl:DatatypeProperty rdf:about="http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#hasGasolinePrice.Value">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#hasGasolinePrice.id -->
+
+    <owl:DatatypeProperty rdf:about="http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#hasGasolinePrice.id">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#hasGeographicalArea.City -->
+
+    <owl:DatatypeProperty rdf:about="http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#hasGeographicalArea.City">
+        <rdfs:domain rdf:resource="http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#GeographicalArea"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#hasGeographicalArea.State -->
+
+    <owl:DatatypeProperty rdf:about="http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#hasGeographicalArea.State">
+        <rdfs:domain rdf:resource="http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#GeographicalArea"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#hasGeographicalArea.id -->
+
+    <owl:DatatypeProperty rdf:about="http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#hasGeographicalArea.id">
+        <rdfs:domain rdf:resource="http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#GeographicalArea"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#hasIncident.CrashTime -->
+
+    <owl:DatatypeProperty rdf:about="http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#hasIncident.CrashTime">
+        <rdfs:domain rdf:resource="http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#Incident"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#hasIncident.MainStreet -->
+
+    <owl:DatatypeProperty rdf:about="http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#hasIncident.MainStreet">
+        <rdfs:domain rdf:resource="http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#Incident"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#hasIncident.SecondaryStreet -->
+
+    <owl:DatatypeProperty rdf:about="http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#hasIncident.SecondaryStreet">
+        <rdfs:domain rdf:resource="http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#Incident"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#hasIncident.id -->
+
+    <owl:DatatypeProperty rdf:about="http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#hasIncident.id">
+        <rdfs:domain rdf:resource="http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#Incident"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#hasPOE.Minutes -->
+
+    <owl:DatatypeProperty rdf:about="http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#hasPOE.Minutes">
+        <rdfs:domain rdf:resource="http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#PortOfEntry"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#hasPOE.Month -->
+
+    <owl:DatatypeProperty rdf:about="http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#hasPOE.Month">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#hasPOE.id -->
+
+    <owl:DatatypeProperty rdf:about="http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#hasPOE.id">
+        <rdfs:domain rdf:resource="http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#PortOfEntry"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#hasPOEAmericasBridge.id -->
+
+    <owl:DatatypeProperty rdf:about="http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#hasPOEAmericasBridge.id">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#hasPOEYsletaBridge.id -->
+
+    <owl:DatatypeProperty rdf:about="http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#hasPOEYsletaBridge.id">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#hasPercentOfSystemCongested -->
+
+    <owl:DatatypeProperty rdf:about="http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#hasPercentOfSystemCongested">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#hasPercentOfSystemCongested.id -->
+
+    <owl:DatatypeProperty rdf:about="http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#hasPercentOfSystemCongested.id">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#hasPercentOfTravelCongested -->
+
+    <owl:DatatypeProperty rdf:about="http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#hasPercentOfTravelCongested">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#hasPercentOfTravelCongested.id -->
+
+    <owl:DatatypeProperty rdf:about="http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#hasPercentOfTravelCongested.id">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#hasResponseTimeToIncidents.ArrivalTime -->
+
+    <owl:DatatypeProperty rdf:about="http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#hasResponseTimeToIncidents.ArrivalTime">
+        <rdfs:domain rdf:resource="http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#ResponseTimeToIncidents"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#hasResponseTimeToIncidents.FinalResponseTime -->
+
+    <owl:DatatypeProperty rdf:about="http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#hasResponseTimeToIncidents.FinalResponseTime">
+        <rdfs:domain rdf:resource="http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#ResponseTimeToIncidents"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#hasResponseTimeToIncidents.NotifyTime -->
+
+    <owl:DatatypeProperty rdf:about="http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#hasResponseTimeToIncidents.NotifyTime">
+        <rdfs:domain rdf:resource="http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#ResponseTimeToIncidents"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#hasResponseTimeToIncidents.Unit -->
+
+    <owl:DatatypeProperty rdf:about="http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#hasResponseTimeToIncidents.Unit">
+        <rdfs:domain rdf:resource="http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#ResponseTimeToIncidents"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#hasResponseTimeToIncidents.id -->
+
+    <owl:DatatypeProperty rdf:about="http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#hasResponseTimeToIncidents.id">
+        <rdfs:domain rdf:resource="http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#ResponseTimeToIncidents"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#hasTimeIndex -->
+
+    <owl:DatatypeProperty rdf:about="http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#hasTimeIndex"/>
+    
+
+
+    <!-- http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#hasTollRevenue.Value -->
+
+    <owl:DatatypeProperty rdf:about="http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#hasTollRevenue.Value">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#hasTollRevenue.id -->
+
+    <owl:DatatypeProperty rdf:about="http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#hasTollRevenue.id">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#hasTrafficVolume.IntersectionStreet -->
+
+    <owl:DatatypeProperty rdf:about="http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#hasTrafficVolume.IntersectionStreet">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#hasTrafficVolume.PrimaryStreet -->
+
+    <owl:DatatypeProperty rdf:about="http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#hasTrafficVolume.PrimaryStreet">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#hasTrafficVolume.Volume -->
+
+    <owl:DatatypeProperty rdf:about="http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#hasTrafficVolume.Volume">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#hasTrafficVolume.id -->
+
+    <owl:DatatypeProperty rdf:about="http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#hasTrafficVolume.id">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#hasTravelTimeIndex.Value -->
+
+    <owl:DatatypeProperty rdf:about="http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#hasTravelTimeIndex.Value">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#hasTravelTimeIndex.id -->
+
+    <owl:DatatypeProperty rdf:about="http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#hasTravelTimeIndex.id">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#hasValueOfTime.Value -->
+
+    <owl:DatatypeProperty rdf:about="http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#hasValueOfTime.Value">
+        <rdfs:domain rdf:resource="http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#ValueOfTime"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#hasValueOfTime.id -->
+
+    <owl:DatatypeProperty rdf:about="http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#hasValueOfTime.id">
+        <rdfs:domain rdf:resource="http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#ValueOfTime"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#hasWeather.AverageTemp -->
+
+    <owl:DatatypeProperty rdf:about="http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#hasWeather.AverageTemp"/>
+    
+
+
+    <!-- http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#hasWeather.AverageWindSpeed -->
+
+    <owl:DatatypeProperty rdf:about="http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#hasWeather.AverageWindSpeed"/>
+    
+
+
+    <!-- http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#hasWeather.Date -->
+
+    <owl:DatatypeProperty rdf:about="http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#hasWeather.Date">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#hasWeather.FastFiveSecondWind -->
+
+    <owl:DatatypeProperty rdf:about="http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#hasWeather.FastFiveSecondWind"/>
+    
+
+
+    <!-- http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#hasWeather.FastTwoSecondWind -->
+
+    <owl:DatatypeProperty rdf:about="http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#hasWeather.FastTwoSecondWind"/>
+    
+
+
+    <!-- http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#hasWeather.Location -->
+
+    <owl:DatatypeProperty rdf:about="http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#hasWeather.Location">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#hasWeather.MaxTemp -->
+
+    <owl:DatatypeProperty rdf:about="http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#hasWeather.MaxTemp">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#hasWeather.MinTemp -->
+
+    <owl:DatatypeProperty rdf:about="http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#hasWeather.MinTemp">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#hasWeather.Precipiation -->
+
+    <owl:DatatypeProperty rdf:about="http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#hasWeather.Precipiation"/>
+    
+
+
+    <!-- http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#hasWeather.Snow -->
+
+    <owl:DatatypeProperty rdf:about="http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#hasWeather.Snow"/>
+    
+
+
+    <!-- http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#hasWeatherCondition.CrashFactors -->
+
+    <owl:DatatypeProperty rdf:about="http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#hasWeatherCondition.CrashFactors">
+        <rdfs:domain rdf:resource="http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#WeatherRelatedIncident"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#hasWeatherCondition.SurfaceCondition -->
+
+    <owl:DatatypeProperty rdf:about="http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#hasWeatherCondition.SurfaceCondition">
+        <rdfs:domain rdf:resource="http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#WeatherRelatedIncident"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#hasWeatherConditionID.ID -->
+
+    <owl:DatatypeProperty rdf:about="http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#hasWeatherConditionID.ID">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#hasWeatherRelatedIncidents.id -->
+
+    <owl:DatatypeProperty rdf:about="http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#hasWeatherRelatedIncidents.id">
+        <rdfs:domain rdf:resource="http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#WeatherRelatedIncident"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#AverageTemperature -->
+
+    <owl:Class rdf:about="http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#AverageTemperature">
+        <rdfs:subClassOf rdf:resource="http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#TemperatureMeasurement"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The average temperature for a single day</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Average Temperature</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#AverageWind -->
+
+    <owl:Class rdf:about="http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#AverageWind">
+        <rdfs:subClassOf rdf:resource="http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#WindMeasurement"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Average wind speed in a day</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Average Wind</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#ComercialVehicleSafetyViolations -->
+
+    <owl:Class rdf:about="http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#ComercialVehicleSafetyViolations">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Standards to which there are violations of vehicle safety</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Comercial Vehicle Safety Violations</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#DailyWeatherMeasurement -->
+
+    <owl:Class rdf:about="http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#DailyWeatherMeasurement">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#hasFrequency"/>
+                <owl:hasValue rdf:resource="http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#day"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Weather measurements for a every recorded day</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Daily Weather Measurement</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#DelayCausedByIncidents -->
+
+    <owl:Class rdf:about="http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#DelayCausedByIncidents">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The delay (time) that is caused because of the incidents</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Delay Caused By Incidents</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#Density -->
+
+    <owl:Class rdf:about="http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#Density">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The level of traffic density</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Density</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#Dust -->
+
+    <owl:Class rdf:about="http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#Dust">
+        <rdfs:subClassOf rdf:resource="http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#DailyWeatherMeasurement"/>
+        <rdfs:comment>Boolean if dust was blowing</rdfs:comment>
+        <rdfs:label>Dust</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#EnvironmentalSustainability -->
+
+    <owl:Class rdf:about="http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#EnvironmentalSustainability">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An indicator for which other classes are measured on</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Environmental Sustainability</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#EvacuationClearenceTime -->
+
+    <owl:Class rdf:about="http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#EvacuationClearenceTime">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Time to clear during an evacuation</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Evacuation Clearence Time</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#FastestFiveSecondWind -->
+
+    <owl:Class rdf:about="http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#FastestFiveSecondWind">
+        <rdfs:subClassOf rdf:resource="http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#WindMeasurement"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Fastest wind speed recorded over a five seconds</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Fastest Wind Speed Over Five Seconds</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#FastestTwoSecondWind -->
+
+    <owl:Class rdf:about="http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#FastestTwoSecondWind">
+        <rdfs:subClassOf rdf:resource="http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#WindMeasurement"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Fastest wind speed recorded over a two seconds</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Fastest Wind Speed Over Two Seconds</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#FatalIncident -->
+
+    <owl:Class rdf:about="http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#FatalIncident">
+        <rdfs:subClassOf rdf:resource="http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#Incident"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Incidents that have fatalities</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Fatal Incident</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#FuelPrice -->
+
+    <owl:Class rdf:about="http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#FuelPrice">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The price of fuel</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Fuel Price</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#GeographicalArea -->
+
+    <owl:Class rdf:about="http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#GeographicalArea">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Larger area (City, State, Country)</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Geographical Area</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#Incident -->
+
+    <owl:Class rdf:about="http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#Incident">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Each Incident (Accident) that occurs</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Incident</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#MaximumTemperature -->
+
+    <owl:Class rdf:about="http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#MaximumTemperature">
+        <rdfs:subClassOf rdf:resource="http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#TemperatureMeasurement"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The maximum recorded temperature for a single day</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Maximum Temperature</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#MinimumTemperature -->
+
+    <owl:Class rdf:about="http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#MinimumTemperature">
+        <rdfs:subClassOf rdf:resource="http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#TemperatureMeasurement"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The minimum recorded temperature for a single day</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Minimum Temperature</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#Mobility -->
+
+    <owl:Class rdf:about="http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#Mobility">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An indicator for which other classes are measured on</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mobility</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#PerformanceMetrics -->
+
+    <owl:Class rdf:about="http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#PerformanceMetrics">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The metrics that are being used to measure performance</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Performance Metrics</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#PortOfEntry -->
+
+    <owl:Class rdf:about="http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#PortOfEntry">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The Ysleta &amp; Americas International Port of Entry</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Port of Entry</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#PrecipitationMeasurement -->
+
+    <owl:Class rdf:about="http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#PrecipitationMeasurement">
+        <rdfs:subClassOf rdf:resource="http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#DailyWeatherMeasurement"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Measure of rainfall (Precipitation) in inches</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Precipitation Measurement</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#RecurringDelay -->
+
+    <owl:Class rdf:about="http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#RecurringDelay">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">How often delays repeat</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Recurring Delay</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#ResponseTimeToIncidents -->
+
+    <owl:Class rdf:about="http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#ResponseTimeToIncidents">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The time it takes for emergency responders to respond to incidents</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Response Time To Incidents</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#Safety -->
+
+    <owl:Class rdf:about="http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#Safety">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A major indicator to determine the level of safety for traffic</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Safety</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#SecurityForHighwayAndTransit -->
+
+    <owl:Class rdf:about="http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#SecurityForHighwayAndTransit">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Keeps record of security for highway and transit</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Security For Highway and Transit</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#SnowMeasurement -->
+
+    <owl:Class rdf:about="http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#SnowMeasurement">
+        <rdfs:subClassOf rdf:resource="http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#DailyWeatherMeasurement"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Amount of snowfall in inches</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Snow Measurement</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#TemperatureMeasurement -->
+
+    <owl:Class rdf:about="http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#TemperatureMeasurement">
+        <rdfs:subClassOf rdf:resource="http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#DailyWeatherMeasurement"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The measurement of temperature for any given recorded day</rdfs:comment>
+        <rdfs:label>Temperature Measurement</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#TrafficMeasurements -->
+
+    <owl:Class rdf:about="http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#TrafficMeasurements">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Traffic Measurements</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#TravelTimeReliability -->
+
+    <owl:Class rdf:about="http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#TravelTimeReliability">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The reliability of travel time standards</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Travel Time Reliability</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#TruckCommodityValue -->
+
+    <owl:Class rdf:about="http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#TruckCommodityValue">
+        <rdfs:subClassOf rdf:resource="http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#Mobility"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#Unit -->
+
+    <owl:Class rdf:about="http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#Unit">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The units that will be used to describe the individual results</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Unit</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#ValueOfTime -->
+
+    <owl:Class rdf:about="http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#ValueOfTime">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The value of time for the commuters in traffic</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Value of Time</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#VehicleMilesTraveled -->
+
+    <owl:Class rdf:about="http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#VehicleMilesTraveled">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Number of miles traveled by vehicles</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Vehicle Miles Traveled</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#VehicleOccupancy -->
+
+    <owl:Class rdf:about="http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#VehicleOccupancy">
+        <rdfs:subClassOf rdf:resource="http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#Mobility"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#WeatherRelatedIncident -->
+
+    <owl:Class rdf:about="http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#WeatherRelatedIncident">
+        <rdfs:subClassOf rdf:resource="http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#Incident"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Incidents that were determined by emergency responders to have been affected by weather conditions</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Weather Related Incident</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#WindMeasurement -->
+
+    <owl:Class rdf:about="http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#WindMeasurement">
+        <rdfs:subClassOf rdf:resource="http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#DailyWeatherMeasurement"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The measurement of wind in a day</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Wind Measurement</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#Celsius -->
+
+    <owl:NamedIndividual rdf:about="http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#Celsius">
+        <rdf:type rdf:resource="http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#Unit"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#CongestionToTime -->
+
+    <owl:NamedIndividual rdf:about="http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#CongestionToTime">
+        <rdf:type rdf:resource="http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#Unit"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#Dollars -->
+
+    <owl:NamedIndividual rdf:about="http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#Dollars">
+        <rdf:type rdf:resource="http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#Unit"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#Fahrenheit -->
+
+    <owl:NamedIndividual rdf:about="http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#Fahrenheit">
+        <rdf:type rdf:resource="http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#Unit"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#Gallons -->
+
+    <owl:NamedIndividual rdf:about="http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#Gallons">
+        <rdf:type rdf:resource="http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#Unit"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#Hours -->
+
+    <owl:NamedIndividual rdf:about="http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#Hours">
+        <rdf:type rdf:resource="http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#Unit"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#Inches -->
+
+    <owl:NamedIndividual rdf:about="http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#Inches">
+        <rdf:type rdf:resource="http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#Unit"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#MilesPerHour -->
+
+    <owl:NamedIndividual rdf:about="http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#MilesPerHour">
+        <rdf:type rdf:resource="http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#Unit"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#Minutes -->
+
+    <owl:NamedIndividual rdf:about="http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#Minutes">
+        <rdf:type rdf:resource="http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#Unit"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#PeakTravelToActualTime -->
+
+    <owl:NamedIndividual rdf:about="http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#PeakTravelToActualTime">
+        <rdf:type rdf:resource="http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#Unit"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#Percent -->
+
+    <owl:NamedIndividual rdf:about="http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#Percent">
+        <rdf:type rdf:resource="http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#Unit"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#Tons -->
+
+    <owl:NamedIndividual rdf:about="http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#Tons">
+        <rdf:type rdf:resource="http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#Unit"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#day -->
+
+    <owl:NamedIndividual rdf:about="http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/#day"/>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.6.20160910-2108) https://github.com/owlcs/owlapi -->
+

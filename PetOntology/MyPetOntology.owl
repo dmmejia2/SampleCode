@@ -1,0 +1,149 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticscience.org/resource/petOntology.owl#"
+     xml:base="http://www.semanticscience.org/resource/petOntology.owl"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticscience.org/resource/petOntology.owl"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticscience.org/resource/petOntology.owl#hasAge -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticscience.org/resource/petOntology.owl#hasAge"/>
+    
+
+
+    <!-- http://www.semanticscience.org/resource/petOntology.owl#hasName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticscience.org/resource/petOntology.owl#hasName"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticscience.org/resource/petOntology.owl#Bird -->
+
+    <owl:Class rdf:about="http://www.semanticscience.org/resource/petOntology.owl#Bird">
+        <rdfs:subClassOf rdf:resource="http://www.semanticscience.org/resource/petOntology.owl#Pet"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticscience.org/resource/petOntology.owl#Cat -->
+
+    <owl:Class rdf:about="http://www.semanticscience.org/resource/petOntology.owl#Cat">
+        <rdfs:subClassOf rdf:resource="http://www.semanticscience.org/resource/petOntology.owl#Pet"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticscience.org/resource/petOntology.owl#Dog -->
+
+    <owl:Class rdf:about="http://www.semanticscience.org/resource/petOntology.owl#Dog">
+        <rdfs:subClassOf rdf:resource="http://www.semanticscience.org/resource/petOntology.owl#Pet"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticscience.org/resource/petOntology.owl#Pet -->
+
+    <owl:Class rdf:about="http://www.semanticscience.org/resource/petOntology.owl#Pet"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticscience.org/resource/petOntology.owl#Black_Panther -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticscience.org/resource/petOntology.owl#Black_Panther">
+        <rdf:type rdf:resource="http://www.semanticscience.org/resource/petOntology.owl#Dog"/>
+        <hasAge rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</hasAge>
+        <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Black_Panther</hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticscience.org/resource/petOntology.owl#Fluffy -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticscience.org/resource/petOntology.owl#Fluffy">
+        <rdf:type rdf:resource="http://www.semanticscience.org/resource/petOntology.owl#Cat"/>
+        <hasAge rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</hasAge>
+        <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Fluffy</hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticscience.org/resource/petOntology.owl#Grumpy_Cat -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticscience.org/resource/petOntology.owl#Grumpy_Cat">
+        <rdf:type rdf:resource="http://www.semanticscience.org/resource/petOntology.owl#Cat"/>
+        <hasAge rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</hasAge>
+        <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Grumpy_Cat</hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticscience.org/resource/petOntology.owl#Hulk -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticscience.org/resource/petOntology.owl#Hulk">
+        <rdf:type rdf:resource="http://www.semanticscience.org/resource/petOntology.owl#Dog"/>
+        <hasAge rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</hasAge>
+        <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hulk</hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticscience.org/resource/petOntology.owl#Thor -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticscience.org/resource/petOntology.owl#Thor">
+        <rdf:type rdf:resource="http://www.semanticscience.org/resource/petOntology.owl#Dog"/>
+        <hasAge rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</hasAge>
+        <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Thor</hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticscience.org/resource/petOntology.owl#Whiskers -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticscience.org/resource/petOntology.owl#Whiskers">
+        <rdf:type rdf:resource="http://www.semanticscience.org/resource/petOntology.owl#Cat"/>
+        <hasAge rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</hasAge>
+        <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Whiskers</hasName>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.5.4) http://owlapi.sourceforge.net -->
+

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
+        <uri id="Automatically generated entry, Timestamp=1494012231503" name="file:/http://semanticsience.org/resource/fp:FreighPerformanceMetrics.owl" uri="FreighPerformanceMetrics.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1494012231503" name="http://anonymous.org/resource/FreightPerformanceUpdate.owl" uri="FreightPerformanceUpdate.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1494012231503" name="http://anonymous.org/resource/FreightPerformanceUpdate3.owl" uri="FreightPerformanceUpdate3.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1494012231503" name="http://anonymous.org/resource/FreightPerformanceUpdate5.owl" uri="FreightPerformanceUpdate5.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1494012231503" name="http://anonymous.org/resource/FreightPerformanceUpdate6.owl" uri="FreightPerformanceUpdate6.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1494012231503" name="http://anonymous.org/resource/FreightPerformanceUpdate7.owl" uri="FreightPerformanceUpdate7.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1494012231503" name="http://ontology.cybershare.utep.edu/FreightPerformance/" uri="FreightPerformancePopulate4.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1494012231503" name="http://ontology.cybershare.utep.edu/SmartCities/FreightPerformance" uri="FreightPerformancePopulate2.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1494012231503" name="duplicate:http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/" uri="FreightPerformancePopulate10.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1494012231503" name="duplicate:http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/" uri="FreightPerformancePopulate11.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1494012231503" name="duplicate:http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/" uri="FreightPerformancePopulate11a.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1494012231503" name="duplicate:http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/" uri="FreightPerformancePopulate3Year2014-2016.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1494012231503" name="duplicate:http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/" uri="FreightPerformancePopulateAllIncidents.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1494012231503" name="duplicate:http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/" uri="FreightPerformancePopulateAllIncidents2.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1494012231503" name="duplicate:http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/" uri="FreightPerformancePopulateFullWeather.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1494012231503" name="duplicate:http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/" uri="FreightPerformanceProvPopulate1Year2014.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1494012231503" name="duplicate:http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/" uri="FreightPerformanceProvPopulate3Year14-16Full.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1494012231503" name="duplicate:http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/" uri="FreightPerformanceProvPopulate3Year14-16FullAssertion.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1494012231503" name="duplicate:http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/" uri="FreightPerformanceProvPopulate3Year2014-2016.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1494012231503" name="duplicate:http://ontology.cybershare.utep.edu/smart-cities/FreightPerformance/" uri="FreightPerformanceProvPopulate3Year2014-2016A.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1494012231503" name="duplicate:http://www.semanticscience.org/resource/petOntology.owl" uri="AnimalTest.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1494012231503" name="duplicate:http://www.semanticscience.org/resource/petOntology.owl" uri="MyAnimalTest.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1494012231503" name="duplicate:https://ontology.cybershare.utep.edu/smart-cities/FreightPerformance" uri="FreightPerformancePopulate5.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1494012231503" name="duplicate:https://ontology.cybershare.utep.edu/smart-cities/FreightPerformance" uri="FreightPerformancePopulate6.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1494012231503" name="https://www.semanticscience.org/resource/FreightPerformanceClasses" uri="FreightPerformancePopulate.owl"/>
+    </group>
+</catalog>

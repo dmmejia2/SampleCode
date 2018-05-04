@@ -1,0 +1,458 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://ontology.cybershare.utep.edu/smart-cities/Mobility#"
+     xml:base="http://ontology.cybershare.utep.edu/smart-cities/Mobility"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://ontology.cybershare.utep.edu/smart-cities/Mobility"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://ontology.cybershare.utep.edu/smart-cities/Mobility#contains -->
+
+    <owl:ObjectProperty rdf:about="http://ontology.cybershare.utep.edu/smart-cities/Mobility#contains"/>
+    
+
+
+    <!-- http://ontology.cybershare.utep.edu/smart-cities/Mobility#has -->
+
+    <owl:ObjectProperty rdf:about="http://ontology.cybershare.utep.edu/smart-cities/Mobility#has"/>
+    
+
+
+    <!-- http://ontology.cybershare.utep.edu/smart-cities/Mobility#involves -->
+
+    <owl:ObjectProperty rdf:about="http://ontology.cybershare.utep.edu/smart-cities/Mobility#involves">
+        <rdfs:domain rdf:resource="http://ontology.cybershare.utep.edu/smart-cities/Mobility#Incident"/>
+        <rdfs:range rdf:resource="http://ontology.cybershare.utep.edu/smart-cities/Mobility#Person"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://ontology.cybershare.utep.edu/smart-cities/Mobility#has1000DollarDamage -->
+
+    <owl:DatatypeProperty rdf:about="http://ontology.cybershare.utep.edu/smart-cities/Mobility#has1000DollarDamage">
+        <rdfs:domain rdf:resource="http://ontology.cybershare.utep.edu/smart-cities/Mobility#Incident"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://ontology.cybershare.utep.edu/smart-cities/Mobility#hasAge -->
+
+    <owl:DatatypeProperty rdf:about="http://ontology.cybershare.utep.edu/smart-cities/Mobility#hasAge">
+        <rdfs:domain rdf:resource="http://ontology.cybershare.utep.edu/smart-cities/Mobility#Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://ontology.cybershare.utep.edu/smart-cities/Mobility#hasAlcohol -->
+
+    <owl:DatatypeProperty rdf:about="http://ontology.cybershare.utep.edu/smart-cities/Mobility#hasAlcohol">
+        <rdfs:domain rdf:resource="http://ontology.cybershare.utep.edu/smart-cities/Mobility#Person"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://ontology.cybershare.utep.edu/smart-cities/Mobility#hasAlcoholBloodContent -->
+
+    <owl:DatatypeProperty rdf:about="http://ontology.cybershare.utep.edu/smart-cities/Mobility#hasAlcoholBloodContent">
+        <rdfs:subPropertyOf rdf:resource="http://ontology.cybershare.utep.edu/smart-cities/Mobility#hasAlcohol"/>
+        <rdfs:domain rdf:resource="http://ontology.cybershare.utep.edu/smart-cities/Mobility#Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://ontology.cybershare.utep.edu/smart-cities/Mobility#hasAlcoholResult -->
+
+    <owl:DatatypeProperty rdf:about="http://ontology.cybershare.utep.edu/smart-cities/Mobility#hasAlcoholResult">
+        <rdfs:subPropertyOf rdf:resource="http://ontology.cybershare.utep.edu/smart-cities/Mobility#hasAlcohol"/>
+        <rdfs:domain rdf:resource="http://ontology.cybershare.utep.edu/smart-cities/Mobility#Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://ontology.cybershare.utep.edu/smart-cities/Mobility#hasAlcoholSpecimanType -->
+
+    <owl:DatatypeProperty rdf:about="http://ontology.cybershare.utep.edu/smart-cities/Mobility#hasAlcoholSpecimanType">
+        <rdfs:subPropertyOf rdf:resource="http://ontology.cybershare.utep.edu/smart-cities/Mobility#hasAlcohol"/>
+        <rdfs:domain rdf:resource="http://ontology.cybershare.utep.edu/smart-cities/Mobility#Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://ontology.cybershare.utep.edu/smart-cities/Mobility#hasAverageDailyTrafficAmount -->
+
+    <owl:DatatypeProperty rdf:about="http://ontology.cybershare.utep.edu/smart-cities/Mobility#hasAverageDailyTrafficAmount">
+        <rdfs:domain rdf:resource="http://ontology.cybershare.utep.edu/smart-cities/Mobility#Incident"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://ontology.cybershare.utep.edu/smart-cities/Mobility#hasAverageDailyTrafficAmountYear -->
+
+    <owl:DatatypeProperty rdf:about="http://ontology.cybershare.utep.edu/smart-cities/Mobility#hasAverageDailyTrafficAmountYear">
+        <rdfs:domain rdf:resource="http://ontology.cybershare.utep.edu/smart-cities/Mobility#Incident"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://ontology.cybershare.utep.edu/smart-cities/Mobility#hasCMVFlag -->
+
+    <owl:DatatypeProperty rdf:about="http://ontology.cybershare.utep.edu/smart-cities/Mobility#hasCMVFlag">
+        <rdfs:domain rdf:resource="http://ontology.cybershare.utep.edu/smart-cities/Mobility#Incident"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://ontology.cybershare.utep.edu/smart-cities/Mobility#hasCity -->
+
+    <owl:DatatypeProperty rdf:about="http://ontology.cybershare.utep.edu/smart-cities/Mobility#hasCity">
+        <rdfs:domain rdf:resource="http://ontology.cybershare.utep.edu/smart-cities/Mobility#Incident"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://ontology.cybershare.utep.edu/smart-cities/Mobility#hasCollisionType -->
+
+    <owl:DatatypeProperty rdf:about="http://ontology.cybershare.utep.edu/smart-cities/Mobility#hasCollisionType">
+        <rdfs:domain rdf:resource="http://ontology.cybershare.utep.edu/smart-cities/Mobility#Incident"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://ontology.cybershare.utep.edu/smart-cities/Mobility#hasConstructionWorkerFlag -->
+
+    <owl:DatatypeProperty rdf:about="http://ontology.cybershare.utep.edu/smart-cities/Mobility#hasConstructionWorkerFlag">
+        <rdfs:domain rdf:resource="http://ontology.cybershare.utep.edu/smart-cities/Mobility#Incident"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://ontology.cybershare.utep.edu/smart-cities/Mobility#hasConstructionZoneFlag -->
+
+    <owl:DatatypeProperty rdf:about="http://ontology.cybershare.utep.edu/smart-cities/Mobility#hasConstructionZoneFlag">
+        <rdfs:domain rdf:resource="http://ontology.cybershare.utep.edu/smart-cities/Mobility#Incident"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://ontology.cybershare.utep.edu/smart-cities/Mobility#hasCounty -->
+
+    <owl:DatatypeProperty rdf:about="http://ontology.cybershare.utep.edu/smart-cities/Mobility#hasCounty">
+        <rdfs:domain rdf:resource="http://ontology.cybershare.utep.edu/smart-cities/Mobility#Incident"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://ontology.cybershare.utep.edu/smart-cities/Mobility#hasCrashID -->
+
+    <owl:DatatypeProperty rdf:about="http://ontology.cybershare.utep.edu/smart-cities/Mobility#hasCrashID">
+        <rdfs:domain rdf:resource="http://ontology.cybershare.utep.edu/smart-cities/Mobility#Incident"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://ontology.cybershare.utep.edu/smart-cities/Mobility#hasCrashSeverity -->
+
+    <owl:DatatypeProperty rdf:about="http://ontology.cybershare.utep.edu/smart-cities/Mobility#hasCrashSeverity">
+        <rdfs:domain rdf:resource="http://ontology.cybershare.utep.edu/smart-cities/Mobility#Incident"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://ontology.cybershare.utep.edu/smart-cities/Mobility#hasCrashTime -->
+
+    <owl:DatatypeProperty rdf:about="http://ontology.cybershare.utep.edu/smart-cities/Mobility#hasCrashTime">
+        <rdfs:domain rdf:resource="http://ontology.cybershare.utep.edu/smart-cities/Mobility#Incident"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://ontology.cybershare.utep.edu/smart-cities/Mobility#hasCrashYear -->
+
+    <owl:DatatypeProperty rdf:about="http://ontology.cybershare.utep.edu/smart-cities/Mobility#hasCrashYear">
+        <rdfs:domain rdf:resource="http://ontology.cybershare.utep.edu/smart-cities/Mobility#Incident"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://ontology.cybershare.utep.edu/smart-cities/Mobility#hasDayOfWeek -->
+
+    <owl:DatatypeProperty rdf:about="http://ontology.cybershare.utep.edu/smart-cities/Mobility#hasDayOfWeek">
+        <rdfs:domain rdf:resource="http://ontology.cybershare.utep.edu/smart-cities/Mobility#Incident"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://ontology.cybershare.utep.edu/smart-cities/Mobility#hasDeathCount -->
+
+    <owl:DatatypeProperty rdf:about="http://ontology.cybershare.utep.edu/smart-cities/Mobility#hasDeathCount">
+        <rdfs:domain rdf:resource="http://ontology.cybershare.utep.edu/smart-cities/Mobility#Incident"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://ontology.cybershare.utep.edu/smart-cities/Mobility#hasDeployedAirbag -->
+
+    <owl:DatatypeProperty rdf:about="http://ontology.cybershare.utep.edu/smart-cities/Mobility#hasDeployedAirbag">
+        <rdfs:domain rdf:resource="http://ontology.cybershare.utep.edu/smart-cities/Mobility#Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://ontology.cybershare.utep.edu/smart-cities/Mobility#hasGender -->
+
+    <owl:DatatypeProperty rdf:about="http://ontology.cybershare.utep.edu/smart-cities/Mobility#hasGender">
+        <rdfs:domain rdf:resource="http://ontology.cybershare.utep.edu/smart-cities/Mobility#Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://ontology.cybershare.utep.edu/smart-cities/Mobility#hasHWNumber -->
+
+    <owl:DatatypeProperty rdf:about="http://ontology.cybershare.utep.edu/smart-cities/Mobility#hasHWNumber">
+        <rdfs:domain rdf:resource="http://ontology.cybershare.utep.edu/smart-cities/Mobility#Incident"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://ontology.cybershare.utep.edu/smart-cities/Mobility#hasHWSystem -->
+
+    <owl:DatatypeProperty rdf:about="http://ontology.cybershare.utep.edu/smart-cities/Mobility#hasHWSystem">
+        <rdfs:domain rdf:resource="http://ontology.cybershare.utep.edu/smart-cities/Mobility#Incident"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://ontology.cybershare.utep.edu/smart-cities/Mobility#hasHelmet -->
+
+    <owl:DatatypeProperty rdf:about="http://ontology.cybershare.utep.edu/smart-cities/Mobility#hasHelmet">
+        <rdfs:domain rdf:resource="http://ontology.cybershare.utep.edu/smart-cities/Mobility#Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://ontology.cybershare.utep.edu/smart-cities/Mobility#hasInjury -->
+
+    <owl:DatatypeProperty rdf:about="http://ontology.cybershare.utep.edu/smart-cities/Mobility#hasInjury">
+        <rdfs:domain rdf:resource="http://ontology.cybershare.utep.edu/smart-cities/Mobility#Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://ontology.cybershare.utep.edu/smart-cities/Mobility#hasInjurySeverity -->
+
+    <owl:DatatypeProperty rdf:about="http://ontology.cybershare.utep.edu/smart-cities/Mobility#hasInjurySeverity">
+        <rdfs:subPropertyOf rdf:resource="http://ontology.cybershare.utep.edu/smart-cities/Mobility#hasInjury"/>
+        <rdfs:domain rdf:resource="http://ontology.cybershare.utep.edu/smart-cities/Mobility#Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://ontology.cybershare.utep.edu/smart-cities/Mobility#hasIntersectionFlag -->
+
+    <owl:DatatypeProperty rdf:about="http://ontology.cybershare.utep.edu/smart-cities/Mobility#hasIntersectionFlag">
+        <rdfs:domain rdf:resource="http://ontology.cybershare.utep.edu/smart-cities/Mobility#Incident"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://ontology.cybershare.utep.edu/smart-cities/Mobility#hasLatitude -->
+
+    <owl:DatatypeProperty rdf:about="http://ontology.cybershare.utep.edu/smart-cities/Mobility#hasLatitude">
+        <rdfs:domain rdf:resource="http://ontology.cybershare.utep.edu/smart-cities/Mobility#Incident"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://ontology.cybershare.utep.edu/smart-cities/Mobility#hasLightCondition -->
+
+    <owl:DatatypeProperty rdf:about="http://ontology.cybershare.utep.edu/smart-cities/Mobility#hasLightCondition">
+        <rdfs:domain rdf:resource="http://ontology.cybershare.utep.edu/smart-cities/Mobility#Incident"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://ontology.cybershare.utep.edu/smart-cities/Mobility#hasLongitude -->
+
+    <owl:DatatypeProperty rdf:about="http://ontology.cybershare.utep.edu/smart-cities/Mobility#hasLongitude">
+        <rdfs:domain rdf:resource="http://ontology.cybershare.utep.edu/smart-cities/Mobility#Incident"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://ontology.cybershare.utep.edu/smart-cities/Mobility#hasRRFlag -->
+
+    <owl:DatatypeProperty rdf:about="http://ontology.cybershare.utep.edu/smart-cities/Mobility#hasRRFlag">
+        <rdfs:domain rdf:resource="http://ontology.cybershare.utep.edu/smart-cities/Mobility#Incident"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://ontology.cybershare.utep.edu/smart-cities/Mobility#hasRestraintType -->
+
+    <owl:DatatypeProperty rdf:about="http://ontology.cybershare.utep.edu/smart-cities/Mobility#hasRestraintType">
+        <rdfs:domain rdf:resource="http://ontology.cybershare.utep.edu/smart-cities/Mobility#Occupant"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://ontology.cybershare.utep.edu/smart-cities/Mobility#hasSchoolBusFlag -->
+
+    <owl:DatatypeProperty rdf:about="http://ontology.cybershare.utep.edu/smart-cities/Mobility#hasSchoolBusFlag">
+        <rdfs:domain rdf:resource="http://ontology.cybershare.utep.edu/smart-cities/Mobility#Incident"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://ontology.cybershare.utep.edu/smart-cities/Mobility#hasSchoolZoneFlag -->
+
+    <owl:DatatypeProperty rdf:about="http://ontology.cybershare.utep.edu/smart-cities/Mobility#hasSchoolZoneFlag">
+        <rdfs:domain rdf:resource="http://ontology.cybershare.utep.edu/smart-cities/Mobility#Incident"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://ontology.cybershare.utep.edu/smart-cities/Mobility#hasSpeedLimit -->
+
+    <owl:DatatypeProperty rdf:about="http://ontology.cybershare.utep.edu/smart-cities/Mobility#hasSpeedLimit">
+        <rdfs:domain rdf:resource="http://ontology.cybershare.utep.edu/smart-cities/Mobility#Incident"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://ontology.cybershare.utep.edu/smart-cities/Mobility#hasSurfaceCondition -->
+
+    <owl:DatatypeProperty rdf:about="http://ontology.cybershare.utep.edu/smart-cities/Mobility#hasSurfaceCondition">
+        <rdfs:domain rdf:resource="http://ontology.cybershare.utep.edu/smart-cities/Mobility#Incident"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://ontology.cybershare.utep.edu/smart-cities/Mobility#hasWeather -->
+
+    <owl:DatatypeProperty rdf:about="http://ontology.cybershare.utep.edu/smart-cities/Mobility#hasWeather">
+        <rdfs:domain rdf:resource="http://ontology.cybershare.utep.edu/smart-cities/Mobility#Incident"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://ontology.cybershare.utep.edu/smart-cities/Mobility#isPersonType -->
+
+    <owl:DatatypeProperty rdf:about="http://ontology.cybershare.utep.edu/smart-cities/Mobility#isPersonType">
+        <rdfs:domain rdf:resource="http://ontology.cybershare.utep.edu/smart-cities/Mobility#Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://ontology.cybershare.utep.edu/smart-cities/Mobility#External -->
+
+    <owl:Class rdf:about="http://ontology.cybershare.utep.edu/smart-cities/Mobility#External">
+        <rdfs:subClassOf rdf:resource="http://ontology.cybershare.utep.edu/smart-cities/Mobility#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology.cybershare.utep.edu/smart-cities/Mobility#Incident -->
+
+    <owl:Class rdf:about="http://ontology.cybershare.utep.edu/smart-cities/Mobility#Incident">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ontology.cybershare.utep.edu/smart-cities/Mobility#involves"/>
+                <owl:someValuesFrom rdf:resource="http://ontology.cybershare.utep.edu/smart-cities/Mobility#Person"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology.cybershare.utep.edu/smart-cities/Mobility#Occupant -->
+
+    <owl:Class rdf:about="http://ontology.cybershare.utep.edu/smart-cities/Mobility#Occupant">
+        <rdfs:subClassOf rdf:resource="http://ontology.cybershare.utep.edu/smart-cities/Mobility#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology.cybershare.utep.edu/smart-cities/Mobility#Person -->
+
+    <owl:Class rdf:about="http://ontology.cybershare.utep.edu/smart-cities/Mobility#Person"/>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+
